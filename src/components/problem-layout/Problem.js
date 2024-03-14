@@ -60,6 +60,8 @@ class Problem extends React.Component {
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
+        this.dynamicHintTypes = this.props.lesson?.dynamicHintTypes;
+        this.chooseAdventure = this.props.lesson?.chooseAdventure;
 
         this.state = {
             stepStates: {},
@@ -241,7 +243,11 @@ class Problem extends React.Component {
                     );
                     continue;
                 }
-                if (this.doMasteryUpdate && (firstAttempts[cardIndex] === undefined || firstAttempts[cardIndex] === false)) {
+                if (
+                    this.doMasteryUpdate &&
+                    (firstAttempts[cardIndex] === undefined ||
+                        firstAttempts[cardIndex] === false)
+                ) {
                     firstAttempts[cardIndex] = true;
                     update(this.bktParams[kc], isCorrect);
                 }
@@ -370,17 +376,20 @@ class Problem extends React.Component {
         var oerArray, licenseArray;
         var oerLink, oerName;
         var licenseLink, licenseName;
-	try {
-        if (problem.oer != null && problem.oer.includes(" <")) {
-            oerArray = problem.oer.split(" <");
-        } else if (lesson.courseOER != null && lesson.courseOER.includes(" ")) {
-            oerArray = lesson.courseOER.split(" <");
-        } else {
+        try {
+            if (problem.oer != null && problem.oer.includes(" <")) {
+                oerArray = problem.oer.split(" <");
+            } else if (
+                lesson.courseOER != null &&
+                lesson.courseOER.includes(" ")
+            ) {
+                oerArray = lesson.courseOER.split(" <");
+            } else {
+                oerArray = ["", ""];
+            }
+        } catch (error) {
             oerArray = ["", ""];
         }
-	} catch(error) {
-		oerArray = ["", ""];
-	}
 
         oerLink = oerArray[0];
         oerName = oerArray[1].substring(0, oerArray[1].length - 1);
@@ -396,7 +405,7 @@ class Problem extends React.Component {
             } else {
                 licenseArray = ["", ""];
             }
-        } catch(error) {
+        } catch (error) {
             licenseArray = ["", ""];
         }
         licenseLink = licenseArray[0];
@@ -478,6 +487,8 @@ class Problem extends React.Component {
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}
                                     prompt_template={this.prompt_template}
+                                    dynamicHintTypes={this.dynamicHintTypes}
+                                    chooseAdventure={this.chooseAdventure}
                                 />
                             </Element>
                         ))}
@@ -583,21 +594,22 @@ class Problem extends React.Component {
                                 </div>
                             ) : (
                                 <div>
-                                {oerName !== "" && oerLink !== "" ? (
-                                <div>
-                                    "{problem.title}" is a derivative of&nbsp;
-                                    <a
-                                        href={oerLink}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        "{oerName}"
-                                    </a>
+                                    {oerName !== "" && oerLink !== "" ? (
+                                        <div>
+                                            "{problem.title}" is a derivative
+                                            of&nbsp;
+                                            <a
+                                                href={oerLink}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                "{oerName}"
+                                            </a>
+                                        </div>
+                                    ) : (
+                                        <></>
+                                    )}
                                 </div>
-                            ) : (
-                                <></>
-                            )}
-                            </div>
                             )}
                         </div>
                         <div

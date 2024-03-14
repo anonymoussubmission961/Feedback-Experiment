@@ -38,3 +38,60 @@
 .image {
     z-index: 2;
 }
+
+/* Dropdown Button */
+/* .inner-button {
+    width: 10rem;
+    margin-top: 0.8rem;
+    background-color: #3e8e41;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.button-group {
+    /* width: 10rem; */
+    position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.button-text {
+    display: none;
+    position: absolute;
+    padding: 0.5rem;
+    background-color: #f1f1f1;
+    width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.button-group:hover .button-text {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown
+.button-group:hover .inner-button {background-color: #3e8e41;} */
+
+.showyourworkAllGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+@media screen and (max-width: 1260px) {
+    .showyourworkAllGroup {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.left-padding {
+    padding-left: 5vw;
+}
+
+@media screen and (max-width: 1260px) {
+    .left-padding {
+        padding-left: 0;
+    }
+}
