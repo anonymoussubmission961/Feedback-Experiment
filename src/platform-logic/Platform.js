@@ -504,8 +504,8 @@ class Platform extends React.Component {
                 {this.state.status === "exhausted" ? (
                     <center>
                         <h2>
-                            Thank you for learning with {SITE_NAME}. You have
-                            finished all problems.
+                        Thank you for completing this phase of the study! 
+                        Please click the right arrow in the corner of the survey window below.
                         </h2>
                     </center>
                 ) : (
