@@ -979,7 +979,7 @@ class ProblemCard extends React.Component {
                                         }}
                                         size="small"
                                     >
-                                        Teacher Gudiance
+                                        Teacher Guidance
                                     </Button>
                                     <div className="button-text">
                                         See help for this problem written by a

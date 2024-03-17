@@ -4,7 +4,7 @@
         "$$f(x)=\\frac{1}{x^2}$$, $$g(x)=x-2$$"
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "$$h(x)=$$ (1/(x-2)**2",
+    "stepTitle": "$$h(x)=\\frac{1}{(x-2)^2}$$",
     "stepBody": "",
     "answerType": "string",
     "variabilization": {},
