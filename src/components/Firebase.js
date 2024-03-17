@@ -29,6 +29,7 @@ const GPTExperimentOutput = "GPTExperimentOutput";
 const feedbackOutput = "feedbacks";
 const siteLogOutput = "siteLogs";
 const focusStatus = "focusStatus";
+const DynamicHintsStudy = "DynamicHintsStudy";
 
 class Firebase {
     constructor(oats_user_id, credentials, treatment, siteVersion, ltiContext) {
@@ -247,7 +248,7 @@ class Firebase {
             bioInfo,
         };
         // return this.writeData(GPTExperimentOutput, data);
-        return this.writeData(problemSubmissionsOutput, data);
+        return this.writeData(DynamicHintsStudy, data);
     }
 
     hintLog(
