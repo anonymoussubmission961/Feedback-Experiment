@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/place-holder/static/css/main.021b9e8a.css",
-    "main.js": "/place-holder/static/js/main.b7fe44e2.js",
-    "static/js/790.8660884c.chunk.js": "/place-holder/static/js/790.8660884c.chunk.js",
-    "static/js/563.0c8cb3bb.chunk.js": "/place-holder/static/js/563.0c8cb3bb.chunk.js",
-    "static/media/Symbola.svg": "/place-holder/static/media/Symbola.f647c9292a2da02d9ae8.svg",
-    "static/media/Symbola.eot": "/place-holder/static/media/Symbola.d25fbd520f6558203fb4.eot",
-    "static/media/Symbola.ttf": "/place-holder/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
-    "static/media/Symbola.woff": "/place-holder/static/media/Symbola.353fd9bde3c87711f5fc.woff",
-    "static/media/Symbola.woff2": "/place-holder/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
-    "index.html": "/place-holder/index.html",
-    "main.021b9e8a.css.map": "/place-holder/static/css/main.021b9e8a.css.map",
-    "main.b7fe44e2.js.map": "/place-holder/static/js/main.b7fe44e2.js.map"
+    "main.css": "/OATutor-AI-Feedback-Experiment/static/css/main.9aa4b58f.css",
+    "main.js": "/OATutor-AI-Feedback-Experiment/static/js/main.155946ca.js",
+    "static/js/790.8660884c.chunk.js": "/OATutor-AI-Feedback-Experiment/static/js/790.8660884c.chunk.js",
+    "static/js/563.0c8cb3bb.chunk.js": "/OATutor-AI-Feedback-Experiment/static/js/563.0c8cb3bb.chunk.js",
+    "static/media/Symbola.svg": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.f647c9292a2da02d9ae8.svg",
+    "static/media/Symbola.eot": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.d25fbd520f6558203fb4.eot",
+    "static/media/Symbola.ttf": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
+    "static/media/Symbola.woff": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.353fd9bde3c87711f5fc.woff",
+    "static/media/Symbola.woff2": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
+    "index.html": "/OATutor-AI-Feedback-Experiment/index.html",
+    "main.9aa4b58f.css.map": "/OATutor-AI-Feedback-Experiment/static/css/main.9aa4b58f.css.map",
+    "main.155946ca.js.map": "/OATutor-AI-Feedback-Experiment/static/js/main.155946ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.021b9e8a.css",
-    "static/js/main.b7fe44e2.js"
+    "static/css/main.9aa4b58f.css",
+    "static/js/main.155946ca.js"
   ]
 }
