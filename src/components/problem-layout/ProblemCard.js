@@ -55,6 +55,7 @@ class ProblemCard extends React.Component {
 
         this.giveStuBottomHint = props.giveStuBottomHint;
         this.giveDynamicHint = props.dynamicHintTypes?.includes("general");
+        this.keepMCOrder = props.keepMCOrder;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
         this.showCorrectness = this.giveStuFeedback;
         this.expandFirstIncorrect = false;
@@ -885,6 +886,7 @@ class ProblemCard extends React.Component {
                                         giveStuFeedback={this.giveStuFeedback}
                                         showCorrectness={this.showCorrectness}
                                         classes={classes}
+                                        keepMCOrder={this.props.keepMCOrder}
                                         state={this.state}
                                         step={this.step}
                                         seed={this.props.seed}
@@ -1063,6 +1065,7 @@ class ProblemCard extends React.Component {
                                         giveStuFeedback={this.giveStuFeedback}
                                         showCorrectness={this.showCorrectness}
                                         classes={classes}
+                                        keepMCOrder={this.props.keepMCOrder}
                                         state={this.state}
                                         step={this.step}
                                         seed={this.props.seed}
@@ -1147,6 +1150,7 @@ class ProblemCard extends React.Component {
                                         showCorrectness={this.showCorrectness}
                                         classes={classes}
                                         state={this.state}
+                                        keepMCOrder={this.props.keepMCOrder}
                                         step={this.step}
                                         seed={this.props.seed}
                                         _setState={(state) =>
@@ -1179,6 +1183,7 @@ class ProblemCard extends React.Component {
                                 state={this.state}
                                 step={this.step}
                                 seed={this.props.seed}
+                                keepMCOrder={this.props.keepMCOrder}
                                 _setState={(state) => this.setState(state)}
                                 context={this.context}
                                 editInput={this.editInput}
