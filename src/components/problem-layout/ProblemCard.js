@@ -25,17 +25,17 @@ import {
 } from "../../config/config.js";
 
 import "./ProblemCard.css";
-import ProblemInput from "../problem-input/ProblemInput";
-import Spacer from "../Spacer";
-import { stagingProp } from "../../util/addStagingProperty";
-import ErrorBoundary from "../ErrorBoundary";
+import ProblemInput from "../problem-input/ProblemInput.js";
+import Spacer from "../Spacer.js";
+import { stagingProp } from "../../util/addStagingProperty.js";
+import ErrorBoundary from "../ErrorBoundary.js";
 import {
     toastNotifyCompletion,
     toastNotifyCorrectness,
-} from "./ToastNotifyCorrectness";
-import { joinList } from "../../util/formListString";
+} from "./ToastNotifyCorrectness.js";
+import { joinList } from "../../util/formListString.js";
 import axios from "axios";
-import Completion from "../../models/OpenAI/Completion";
+import Completion from "../../models/OpenAI/Completion.js";
 import BlinkingCursor from "@components/BlinkingCursor.js";
 
 class ProblemCard extends React.Component {
@@ -49,7 +49,6 @@ class ProblemCard extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
-        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
 
         this.allowRetry = this.giveStuFeedback;
 
@@ -268,11 +267,6 @@ class ProblemCard extends React.Component {
 
         const isCorrect = !!correctAnswer;
 
-        if (!isCorrect) {
-            this.expandFirstIncorrect = true;
-            this.toggleHints("auto-expand");
-        }
-
         this.context.firebase.log(
             parsed,
             problemID,
@@ -335,7 +329,7 @@ class ProblemCard extends React.Component {
 
     toggleHints = (event) => {
         this.setState({
-            enableHintGeneration: false,
+            enableHintGeneration: true,
             dynamicHintGenerationFinished: false,
             displayHints: true,
         });
@@ -353,7 +347,7 @@ class ProblemCard extends React.Component {
                 );
             }
         );
-        if (this.giveDynamicHint) {
+        if (this.giveDynamicHint && event != "auto-expand") {
             this.generateHintFromGPT();
         }
     };
@@ -755,9 +749,6 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
-                                        giveHintOnIncorrect={
-                                            this.giveHintOnIncorrect
-                                        }
                                         giveStuFeedback={this.giveStuFeedback}
                                         unlockFirstHint={this.unlockFirstHint}
                                         problemID={this.props.problemID}
@@ -793,9 +784,6 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
-                                        giveHintOnIncorrect={
-                                            this.giveHintOnIncorrect
-                                        }
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
                                         unlockFirstHint={this.unlockFirstHint}
@@ -840,16 +828,6 @@ class ProblemCard extends React.Component {
                             >
                                 <div style={{ width: "60%" }}>
                                     <span>Show your steps</span>
-                                    {/* <math-field
-                                        // ref={this.mathliveRef}
-                                        onChange={this.handleStudStepsChange}
-                                        onInput={(evt) =>
-                                            this.props.setInputValState(
-                                                evt.target.value
-                                            )
-                                        }
-                                        style={{ display: "block" }}
-                                    ></math-field> */}
                                     <textarea
                                         ref={this.state.showyourworkRef}
                                         type="text"
@@ -868,11 +846,14 @@ class ProblemCard extends React.Component {
                                         width: "40%",
                                         display: "flex",
                                         flexDirection: "column",
-                                        alignItems: "center",
+                                        alignItems: "start",
                                         justifyContent: "center",
+                                        gap: "0.5rem",
                                     }}
                                 >
-                                    <span>Final Answer</span>
+                                    <span style={{ marginLeft: "8vw" }}>
+                                        Final Answer
+                                    </span>
                                     <ProblemInput
                                         variabilization={chooseVariables(
                                             Object.assign(
@@ -898,6 +879,7 @@ class ProblemCard extends React.Component {
                                         setInputValState={this.setInputValState}
                                         handleKey={this.handleKey}
                                         index={this.props.index}
+                                        chooseAdventure={this.chooseAdventure}
                                     />
                                 </div>
                             </div>
