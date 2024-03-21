@@ -819,14 +819,8 @@ class ProblemCard extends React.Component {
                                 alignItems: "start",
                             }}
                         >
-                            <div
-                                style={{
-                                    display: "flex",
-                                    width: "100%",
-                                    flexDirection: "row",
-                                }}
-                            >
-                                <div style={{ width: "60%" }}>
+                            <div className="chooseAdventureStructure">
+                                <div className="chooseAdventure-TextBox">
                                     <span>Show your steps</span>
                                     <textarea
                                         ref={this.state.showyourworkRef}
@@ -841,17 +835,11 @@ class ProblemCard extends React.Component {
                                         }}
                                     />
                                 </div>
-                                <div
-                                    style={{
-                                        width: "40%",
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        alignItems: "start",
-                                        justifyContent: "center",
-                                        gap: "0.5rem",
-                                    }}
-                                >
-                                    <span style={{ marginLeft: "8vw" }}>
+                                <div className="chooseAdventure-AnswerField">
+                                    <span
+                                        className="chooseAdventure-AnswerText"
+                                        // style={{ marginLeft: "8vw" }}
+                                    >
                                         Final Answer
                                     </span>
                                     <ProblemInput

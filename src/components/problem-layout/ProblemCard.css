@@ -90,8 +90,58 @@
     padding-left: 5vw;
 }
 
+.chooseAdventureStructure {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.chooseAdventure-TextBox {
+    width: 60%;
+    padding: 1rem;
+}
+
+.chooseAdventure-AnswerField {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.chooseAdventure-AnswerText {
+    margin-left: 8vw;
+}
+
 @media screen and (max-width: 1260px) {
     .left-padding {
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .chooseAdventureStructure {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .chooseAdventure-TextBox {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .chooseAdventure-AnswerField {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .chooseAdventure-AnswerText {
+        margin-left: 18vw;
+        text-align: center;
     }
 }
