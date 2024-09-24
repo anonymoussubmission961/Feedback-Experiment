@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/OATutor-AI-Feedback-Experiment/static/css/main.a34c96e6.css",
-    "main.js": "/OATutor-AI-Feedback-Experiment/static/js/main.f8006d00.js",
-    "static/js/790.8660884c.chunk.js": "/OATutor-AI-Feedback-Experiment/static/js/790.8660884c.chunk.js",
-    "static/js/563.0c8cb3bb.chunk.js": "/OATutor-AI-Feedback-Experiment/static/js/563.0c8cb3bb.chunk.js",
-    "static/media/Symbola.svg": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.f647c9292a2da02d9ae8.svg",
-    "static/media/Symbola.eot": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.d25fbd520f6558203fb4.eot",
-    "static/media/Symbola.ttf": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
-    "static/media/Symbola.woff": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.353fd9bde3c87711f5fc.woff",
-    "static/media/Symbola.woff2": "/OATutor-AI-Feedback-Experiment/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
-    "index.html": "/OATutor-AI-Feedback-Experiment/index.html",
-    "main.a34c96e6.css.map": "/OATutor-AI-Feedback-Experiment/static/css/main.a34c96e6.css.map",
-    "main.f8006d00.js.map": "/OATutor-AI-Feedback-Experiment/static/js/main.f8006d00.js.map"
+    "main.css": "/Feedback-Experiment/static/css/main.d1e2945f.css",
+    "main.js": "/Feedback-Experiment/static/js/main.a8f67861.js",
+    "static/js/790.8660884c.chunk.js": "/Feedback-Experiment/static/js/790.8660884c.chunk.js",
+    "static/js/563.0c8cb3bb.chunk.js": "/Feedback-Experiment/static/js/563.0c8cb3bb.chunk.js",
+    "static/media/Symbola.svg": "/Feedback-Experiment/static/media/Symbola.f647c9292a2da02d9ae8.svg",
+    "static/media/Symbola.eot": "/Feedback-Experiment/static/media/Symbola.d25fbd520f6558203fb4.eot",
+    "static/media/Symbola.ttf": "/Feedback-Experiment/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
+    "static/media/Symbola.woff": "/Feedback-Experiment/static/media/Symbola.353fd9bde3c87711f5fc.woff",
+    "static/media/Symbola.woff2": "/Feedback-Experiment/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
+    "index.html": "/Feedback-Experiment/index.html",
+    "main.d1e2945f.css.map": "/Feedback-Experiment/static/css/main.d1e2945f.css.map",
+    "main.a8f67861.js.map": "/Feedback-Experiment/static/js/main.a8f67861.js.map"
   },
   "entrypoints": [
-    "static/css/main.a34c96e6.css",
-    "static/js/main.f8006d00.js"
+    "static/css/main.d1e2945f.css",
+    "static/js/main.a8f67861.js"
   ]
 }
