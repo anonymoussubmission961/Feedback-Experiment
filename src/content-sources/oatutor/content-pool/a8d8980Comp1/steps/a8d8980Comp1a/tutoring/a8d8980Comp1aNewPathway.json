@@ -1,0 +1,12 @@
+[
+    {
+        "id": "a8d8980Comp1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Worked Solution",
+        "text": "To express the given function $$h(x) = |x^2 + 7|$$ as a composition of two functions, such that h(x) = f(g(x)), we need to identify two functions f(x) and g(x) where one function is applied inside the other.\\nLet's analyze the given options:\\nf(x) = |x|, $$g(x) = x^2 + 7$$: This choice correctly expresses h(x) because g(x) computes $$x^2 + 7$$, and then f(g(x)) takes the absolute value of that result, which matches h(x).\\n$$f(x) = x^2 + 7$$, g(x) = |x|: This choice does not correctly express h(x) because it would first take the absolute value of x and then square it and add 7, which doesn't require taking the absolute value after squaring and adding 7 to x.\\n$$f(x) = x^2$$, g(x) = |x + 7|: This choice incorrectly represents h(x) because it implies the absolute operation is applied before squaring and adding 7, which is not the structure of h(x).\\n$$f(x) = |x^2|$$, g(x) = x + 7: This choice does not match h(x) because it suggests adding 7 to x before squaring, which is not what h(x) describes.\\nBased on this analysis, the correct answer is:\\nf(x) = |x|, $$g(x) = x^2 + 7$$\\nThis selection correctly composes h(x) as f(g(x)) by first performing the operation inside g(x), which is $$x^2 + 7$$, and then applying the absolute value function f(x) to the result.",
+        "variabilization": {},
+        "oer": "https://OATutor.io <OATutor>",
+        "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+    }
+]
